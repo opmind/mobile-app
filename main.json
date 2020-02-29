@@ -1,107 +1,23 @@
 {
-    "$jason": {
-      "head": {
-        "title": "Inspark Mobile",
-        "actions": {
-          "$foreground": {
-            "type": "$reload"
-          }
-        }
+  "$jason": {
+    "head": {
+      "title": {
+        "type": "image",
+        "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+      }
+    },
+    "body": {
+      "style": {
+        "background": "#ffffff",
+        "border": "none"
       },
-      "body": {
-        "style": {
-          "background": "#ffffff",
-          "border": "none"
-        },
-        "sections": [
-          {
-            "items": [
-              {
-                "type": "vertical",
-                "style": {
-                  "padding": "30",
-                  "spacing": "20",
-                  "align": "center"
-                },
-                "components": [
-                  {
-                    "type": "label",
-                    "text": "It's ALIVE!",
-                    "style": {
-                      "align": "center",
-                      "font": "Courier-Bold",
-                      "size": "18"
-                    }
-                  },
-                  {
-                    "type": "label",
-                    "text": "This is a demo app. You can make your own app by changing the url inside settings.plist",
-                    "style": {
-                      "align": "center",
-                      "font": "Courier",
-                      "padding": "30",
-                      "size": "14"
-                    }
-                  },
-                  {
-                    "type": "label",
-                    "text": "Inspark Mobile",
-                    "style": {
-                      "align": "center",
-                      "font": "HelveticaNeue-Bold",
-                      "size": "50"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "label",
-                "style": {
-                  "align": "right",
-                  "padding": "10",
-                  "color": "#000000",
-                  "font": "HelveticaNeue",
-                  "size": "12"
-                },
-                "text": "Check out Live DEMO",
-                "href": {
-                  "url": "https://jasonette.github.io/Jasonpedia/demo.json",
-                  "fresh": "true"
-                }
-              },
-              {
-                "type": "label",
-                "style": {
-                  "align": "right",
-                  "padding": "10",
-                  "color": "#000000",
-                  "font": "HelveticaNeue",
-                  "size": "12"
-                },
-                "text": "Watch the tutorial video",
-                "href": {
-                  "url": "https://www.youtube.com/watch?v=hfevBAAfCMQ",
-                  "view": "Web"
-                }
-              },
-              {
-                "type": "label",
-                "style": {
-                  "align": "right",
-                  "padding": "10",
-                  "color": "#000000",
-                  "font": "HelveticaNeue",
-                  "size": "12"
-                },
-                "text": "View documentation",
-                "href": {
-                  "url": "https://jasonette.github.io/documentation",
-                  "view": "Web"
-                }
-              }
-            ]
-          }
-        ]
+      "background": {
+        "type": "html",
+        "url": "https://semnext.inspark.ru/semux/",
+        "action": {
+          "trigger": "navigate"
+        }
       }
     }
   }
+}
