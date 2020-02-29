@@ -7,10 +7,6 @@
       }
     },
     "body": {
-      "style": {
-        "background": "#ffffff",
-        "border": "none"
-      },
       "background": {
         "type": "html",
         "url": "https://semnext.inspark.ru/semux/",
