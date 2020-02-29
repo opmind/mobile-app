@@ -4,6 +4,11 @@
       "title": {
         "type": "image",
         "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
       }
     },
     "body": {
