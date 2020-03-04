@@ -58,12 +58,10 @@
         {
           "items": [
             {
-              "background": {
-                "type": "html",
-                "url": "https://semnext.inspark.ru/semux/",
-                "action": {
-                  "trigger": "navigate"
-                }
+              "type": "html",
+              "url": "https://semnext.inspark.ru/semux/",
+              "action": {
+                "trigger": "navigate"
               }
             }
           ]
