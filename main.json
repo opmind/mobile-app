@@ -2,9 +2,10 @@
   "$jason": {
     "head": {
       "title": "Inspark IoT",
+      "offline": "true",
       "actions": {
-        "$foreground": {
-          "type": "$reload"
+        "$pull": {
+            "type": "$reload"
         }
       }
     },
