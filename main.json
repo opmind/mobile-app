@@ -12,7 +12,6 @@
     "body": {
       "background": {
         "type": "html",
-        "text": "<html><head><style>.c-navbar{display: none;}</style><head><html>",
         "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
         "action": {
           "trigger": "navigate"
