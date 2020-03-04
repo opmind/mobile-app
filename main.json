@@ -43,7 +43,7 @@
               "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/main.json"
             },
             {
-              "image": "https://img.icons8.com/dotty/344/speed.png",
+              "image": "https://img.icons8.com/android/344/combo-chart.png",
               "text": "Charts",
               "style": {
                 "height": "21"
@@ -53,14 +53,6 @@
             {
               "image": "https://img.icons8.com/android/344/map.png",
               "text": "Map",
-              "style": {
-                "height": "21"
-              },
-              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/map.json"
-            },
-            {
-              "image": "https://img.icons8.com/android/344/map.png",
-              "text": "Profile",
               "style": {
                 "height": "21"
               },
