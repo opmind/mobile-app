@@ -54,19 +54,13 @@
           ]
         }
       },
-      "sections": [
-        {
-          "items": [
-            {
-              "type": "html",
-              "url": "https://semnext.inspark.ru/semux/",
-              "action": {
-                "trigger": "navigate"
-              }
-            }
-          ]
+      "background": {
+        "type": "html",
+        "url": "https://semnext.inspark.ru/semux/",
+        "action": {
+          "trigger": "navigate"
         }
-      ]
+      }
     }
   }
 }
