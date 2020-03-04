@@ -1,24 +1,22 @@
 {
     "$jason": {
       "head": {
-        "title": {
-          "type": "image",
-          "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
-        },
-        "styles": {
-          "note": {
-            "color": "#ffffff",
-            "font": "HelveticaNeue-Bold",
-            "size": "15"
-          }
-        },
+        "title": "Inspark IoT",
+        "offline": "true",
         "actions": {
-          "$foreground": {
-            "type": "$reload"
+          "$pull": {
+              "type": "$reload"
           }
         }
       },
       "body": {
+        "background": {
+          "type": "html",
+          "url": "https://semnext.inspark.ru/semux/#!/app/map",
+          "action": {
+            "trigger": "navigate"
+          }
+        },
         "header": {
           "title": {
             "type": "image",
@@ -26,7 +24,7 @@
               "width": "35",
               "height": "35"
             },
-            "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+            "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
           }
         },
         "footer": {
@@ -46,11 +44,11 @@
               },
               {
                 "image": "https://img.icons8.com/dotty/344/speed.png",
-                "text": "Dashboards",
+                "text": "Charts",
                 "style": {
                   "height": "21"
                 },
-                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/dashboards.json"
+                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/charts.json"
               },
               {
                 "image": "https://img.icons8.com/android/344/map.png",
@@ -59,25 +57,18 @@
                   "height": "21"
                 },
                 "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/map.json"
-              }
-            ]
-          }
-        },
-        "sections": [
-          {
-            "items": [
+              },
               {
-                "background": {
-                  "type": "html",
-                  "url": "https://semnext.inspark.ru/semux/#!/app/map",
-                  "action": {
-                    "trigger": "navigate"
-                  }
-                }
+                "image": "https://img.icons8.com/material-outlined/344/head-profile.png",
+                "text": "Profile",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/profile.json"
               }
             ]
           }
-        ]
+        }
       }
     }
   }
