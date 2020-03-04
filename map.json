@@ -4,9 +4,6 @@
         "title": "Inspark IoT",
         "offline": "true",
         "actions": {
-          "$pull": {
-              "type": "$reload"
-          },
           "$foreground": {
             "type": "$reload"
           }
