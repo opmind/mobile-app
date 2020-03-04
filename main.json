@@ -10,13 +10,6 @@
       }
     },
     "body": {
-      "background": {
-        "type": "html",
-        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
-        "action": {
-          "trigger": "navigate"
-        }
-      },
       "header": {
         "title": {
           "type": "image",
@@ -67,6 +60,13 @@
               "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/profile.json"
             }
           ]
+        }
+      },
+      "background": {
+        "type": "html",
+        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+        "action": {
+          "trigger": "navigate"
         }
       }
     }
