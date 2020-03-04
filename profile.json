@@ -12,7 +12,7 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "https://semnext.inspark.ru/semux/#!/main/profile",
+          "url": "https://semnext.inspark.ru/semux/#!/main/user/profile",
           "action": {
             "trigger": "navigate"
           }
