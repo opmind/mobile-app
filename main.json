@@ -3,6 +3,9 @@
     "head": {
       "title": "Inspark IoT",
       "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
       }
     },
     "body": {
