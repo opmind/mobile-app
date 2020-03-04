@@ -14,6 +14,74 @@
           "trigger": "navigate"
         }
       }
+    }{
+      "$jason": {
+        "head": {
+          "title": {
+            "type": "image",
+            "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+          },
+          "actions": {
+            "$foreground": {
+              "type": "$reload"
+            }
+          }
+        },
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "https://semnext.inspark.ru/semux/",
+            "action": {
+              "trigger": "navigate"
+            }
+          }
+        },
+        "footer": {
+          "tabs": {
+            "style": {
+              "background": "rgba(255,255,255,0.8)",
+              "color": "#009efa"
+            },
+            "items": [{
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+              "text": "Home",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+            }, {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
+              "text": "Notifications",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+            }, {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
+              "text": "Moments",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+            }, {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/messages.png",
+              "text": "Messages",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+            }, {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png",
+              "text": "Me",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+            }]
+          }
+        }
+      }
     }
+    
   }
 }
