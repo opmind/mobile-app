@@ -10,58 +10,6 @@
       }
     },
     "body": {
-      "header": {
-        "title": {
-          "type": "image",
-          "style": {
-            "width": "35",
-            "height": "35"
-          },
-          "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
-        }
-      },
-      "footer": {
-        "tabs": {
-          "style": {
-            "background": "rgba(255,255,255,0.8)",
-            "color": "#009efa"
-          },
-          "items": [
-            {
-              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
-              "text": "Home",
-              "style": {
-                "height": "21"
-              },
-              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/main.json"
-            },
-            {
-              "image": "https://img.icons8.com/android/344/combo-chart.png",
-              "text": "Charts",
-              "style": {
-                "height": "21"
-              },
-              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/charts.json"
-            },
-            {
-              "image": "https://img.icons8.com/android/344/map.png",
-              "text": "Map",
-              "style": {
-                "height": "21"
-              },
-              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/map.json"
-            },
-            {
-              "image": "https://img.icons8.com/material-outlined/344/head-profile.png",
-              "text": "Profile",
-              "style": {
-                "height": "21"
-              },
-              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/profile.json"
-            }
-          ]
-        }
-      },
       "background": {
         "type": "html",
         "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
