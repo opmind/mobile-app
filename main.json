@@ -12,57 +12,68 @@
       }
     },
     "body": {
-      "background": {
-        "type": "html",
-        "url": "https://semnext.inspark.ru/semux/",
-        "action": {
-          "trigger": "navigate"
+      "header": {
+        "title": {
+          "type": "image",
+          "style": {
+            "width": "35",
+            "height": "35"
+          },
+          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/logo.png"
         }
-      }
-    },
-    "footer": {
-      "tabs": {
-        "style": {
-          "background": "rgba(255,255,255,0.8)",
-          "color": "#009efa"
-        },
-        "items": [{
-          "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
-          "text": "Home",
+      },
+      "footer": {
+        "tabs": {
           "style": {
-            "height": "21"
+            "background": "rgba(255,255,255,0.8)",
+            "color": "#009efa"
           },
-          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-        }, {
-          "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
-          "text": "Notifications",
-          "style": {
-            "height": "21"
-          },
-          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-        }, {
-          "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
-          "text": "Moments",
-          "style": {
-            "height": "21"
-          },
-          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-        }, {
-          "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/messages.png",
-          "text": "Messages",
-          "style": {
-            "height": "21"
-          },
-          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-        }, {
-          "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png",
-          "text": "Me",
-          "style": {
-            "height": "21"
-          },
-          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-        }]
-      }
+          "items": [{
+            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+            "text": "Home",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+          }, {
+            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
+            "text": "Notifications",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+          }, {
+            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
+            "text": "Moments",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+          }, {
+            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/messages.png",
+            "text": "Messages",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+          }, {
+            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png",
+            "text": "Me",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+          }]
+        }
+      },
+      "sections": [{
+        "background": {
+          "type": "html",
+          "url": "https://semnext.inspark.ru/semux/",
+          "action": {
+            "trigger": "navigate"
+          }
+        }
+      }] 
     }
-  }
 }
