@@ -7,7 +7,6 @@
         },
         "styles": {
           "note": {
-            "color": "#ffffff",
             "font": "HelveticaNeue-Bold",
             "size": "15"
           }
@@ -53,7 +52,7 @@
                 "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/dashboards.json"
               },
               {
-                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
+                "image": "https://img.icons8.com/android/344/map.png",
                 "text": "Map",
                 "style": {
                   "height": "21"
