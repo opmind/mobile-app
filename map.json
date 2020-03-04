@@ -6,6 +6,9 @@
         "actions": {
           "$pull": {
               "type": "$reload"
+          },
+          "$foreground": {
+            "type": "$reload"
           }
         }
       },
