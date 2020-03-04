@@ -1,9 +1,16 @@
-{ 
+{
   "$jason": {
     "head": {
       "title": {
         "type": "image",
         "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+      },
+      "styles": {
+        "note": {
+          "color": "#ffffff",
+          "font": "HelveticaNeue-Bold",
+          "size": "15"
+        }
       },
       "actions": {
         "$foreground": {
@@ -19,7 +26,7 @@
             "width": "35",
             "height": "35"
           },
-          "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/logo.png"
+          "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
         }
       },
       "footer": {
@@ -28,52 +35,49 @@
             "background": "rgba(255,255,255,0.8)",
             "color": "#009efa"
           },
-          "items": [{
-            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
-            "text": "Home",
-            "style": {
-              "height": "21"
+          "items": [
+            {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+              "text": "Home",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/main.json"
             },
-            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-          }, {
-            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
-            "text": "Notifications",
-            "style": {
-              "height": "21"
+            {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
+              "text": "Dashboards",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/dashboards.json"
             },
-            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-          }, {
-            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
-            "text": "Moments",
-            "style": {
-              "height": "21"
-            },
-            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-          }, {
-            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/messages.png",
-            "text": "Messages",
-            "style": {
-              "height": "21"
-            },
-            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-          }, {
-            "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png",
-            "text": "Me",
-            "style": {
-              "height": "21"
-            },
-            "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-          }]
+            {
+              "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
+              "text": "Map",
+              "style": {
+                "height": "21"
+              },
+              "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/map.json"
+            }
+          ]
         }
       },
-      "sections": [{
-        "background": {
-          "type": "html",
-          "url": "https://semnext.inspark.ru/semux/",
-          "action": {
-            "trigger": "navigate"
-          }
+      "sections": [
+        {
+          "items": [
+            {
+              "background": {
+                "type": "html",
+                "url": "https://semnext.inspark.ru/semux/",
+                "action": {
+                  "trigger": "navigate"
+                }
+              }
+            }
+          ]
         }
-      }] 
+      ]
     }
+  }
 }

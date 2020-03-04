@@ -1,0 +1,84 @@
+{
+    "$jason": {
+      "head": {
+        "title": {
+          "type": "image",
+          "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+        },
+        "styles": {
+          "note": {
+            "color": "#ffffff",
+            "font": "HelveticaNeue-Bold",
+            "size": "15"
+          }
+        },
+        "actions": {
+          "$foreground": {
+            "type": "$reload"
+          }
+        }
+      },
+      "body": {
+        "header": {
+          "title": {
+            "type": "image",
+            "style": {
+              "width": "35",
+              "height": "35"
+            },
+            "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+          }
+        },
+        "footer": {
+          "tabs": {
+            "style": {
+              "background": "rgba(255,255,255,0.8)",
+              "color": "#009efa"
+            },
+            "items": [
+              {
+                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+                "text": "Home",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/main.json"
+              },
+              {
+                "image": "https://img.icons8.com/dotty/344/speed.png",
+                "text": "Dashboards",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/dashboards.json"
+              },
+              {
+                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
+                "text": "Map",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/map.json"
+              }
+            ]
+          }
+        },
+        "sections": [
+          {
+            "items": [
+              {
+                "background": {
+                  "type": "html",
+                  "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+                  "action": {
+                    "trigger": "navigate"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  
