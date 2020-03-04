@@ -1,17 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": {
-        "type": "image",
-        "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
-      },
-      "styles": {
-        "note": {
-          "color": "#ffffff",
-          "font": "HelveticaNeue-Bold",
-          "size": "15"
-        }
-      },
+      "title": "Inspark IoT",
       "actions": {
         "$foreground": {
           "type": "$reload"
@@ -26,7 +16,7 @@
             "width": "35",
             "height": "35"
           },
-          "url": "https://semnext.inspark.ru/semux/assets/static/misc/favicon-32x32.png"
+          "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
         }
       },
       "footer": {
