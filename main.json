@@ -13,7 +13,7 @@
           "background": {
             "type": "html",
             "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
-            "action": {
+            "actions": {
               "trigger": "navigate",
               "$load": {
                 "type": "$script.include",
