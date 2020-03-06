@@ -28,6 +28,26 @@
             }
           }
         }
+      },
+      "templates": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              { "text": "alert('script included sucessfully!');" }
+            ]
+          },
+          "success": {
+            "trigger": "random"
+          }
+        },
+        "random": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Random color",
+            "description": "Generated a color: {{$root.randomcolor()}}"
+          }
+        }
       }
     },
     "body": {
