@@ -14,6 +14,7 @@
             "type": "html",
             "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
             "action": {
+              "trigger": "navigate",
               "$load": {
                 "type": "$script.include",
                 "options": {
@@ -31,13 +32,6 @@
     }
   },
   "body": {
-    "background": {
-      "type": "html",
-      "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
-      "action": {
-        "trigger": "navigate"
-      }
-    },
     "header": {
       "title": {
         "type": "image",
