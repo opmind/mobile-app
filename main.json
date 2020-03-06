@@ -9,15 +9,21 @@
         }
       },
       "templates": {
-        "actions": {
-          "$load": {
-            "type": "$script.include",
-            "options": {
-              "items": [
-                {
-                  "text": "var navbar = document.getElementsByClassName('c-navbar')[0];navbar.setAttribute(\"style\", \"display: none\");"
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+            "action": {
+              "$load": {
+                "type": "$script.include",
+                "options": {
+                  "items": [
+                    {
+                      "text": "var navbar = document.getElementsByClassName('c-navbar')[0];navbar.setAttribute(\"style\", \"display: none\");"
+                    }
+                  ]
                 }
-              ]
+              }
             }
           }
         }
