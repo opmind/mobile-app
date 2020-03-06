@@ -8,12 +8,15 @@
           "type": "$reload"
         },
         "load": {
-          "type": "$agent.inject",
+          "type": "$script.include",
           "options": {
             "id": "$webcontainer",
             "items": [{
               "text": "var navbar = document.getElementsByClassName('c-navbar')[0]; navbar.style.display = 'none';"
             }]
+          },
+          "success": {
+            "type": "$render"
           }
         }
       }
