@@ -30,16 +30,24 @@
         }
       },
       "templates": {
-        "$load": {
-          "type": "$script.include",
-          "options": {
+        "body": {
+          "sections": [{
             "items": [
-              { "text": "alert('script included sucessfully!');" }
+              {
+                "$load": {
+                  "type": "$script.include",
+                  "options": {
+                    "items": [
+                      { "text": "var randomcolor = function() { return '#'+Math.floor(Math.random()*16777215).toString(16); }" }
+                    ]
+                  },
+                  "success": {
+                    "trigger": "random"
+                  }
+                }
+              }
             ]
-          },
-          "success": {
-            "trigger": "random"
-          }
+          }]
         },
         "random": {
           "type": "$util.alert",
