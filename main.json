@@ -4,23 +4,22 @@
       "title": "Inspark IoT",
       "offline": "true",
       "actions": {
-        "$foreground": {
-          "type": "$reload"
-        }
-      },
-      "templates": {
-        "action": {
-          "$load": {
-            "type": "$script.include",
-            "options": {
-              "items": [
-                {
-                  "text": "var navbar = document.getElementsByClassName('c-navbar')[0];navbar.setAttribute('style', 'display: none');"
-                }
-              ]
-            }
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var navbar = document.getElementsByClassName('c-navbar')[0];navbar.setAttribute('style', 'display: none');"
+              }
+            ]
+          },
+          "success": {
+            "type": "$render"
           }
         }
+      },
+      "$foreground": {
+        "type": "$reload"
       }
     },
     "body": {
