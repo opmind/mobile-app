@@ -8,11 +8,24 @@
           "type": "$reload"
         },
         "load": {
-          "type": "$agent.inject",
+          "type": "$script.include",
           "options": {
-            "items": [{
-              "text": "var navbar = document.getElementsByClassName('c-navbar')[0]; navbar.style.display = none';"
-            }]
+            "items": [
+              { "url": "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" },
+              { "text": "alert('script injected!';" },
+              { "url": "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" },
+              { "url": "https://rawgit.com/mathiasbynens/he/master/he.js" }
+            ]
+          },
+          "success": {
+            "type": "$render",
+            "options": {
+              "data": {
+                "raw": "no man&#38;s land",
+                "decoded": "{{$root.he.decode('no man&#39;s land')}}",
+                "unique": "{{$root._.uniq([1,2,3,3,3,4,4,4,4,5])}}"
+              }
+            }
           }
         }
       }
