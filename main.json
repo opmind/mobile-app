@@ -38,23 +38,13 @@
                   "type": "$script.include",
                   "options": {
                     "items": [
-                      { "text": "var randomcolor = function() { return '#'+Math.floor(Math.random()*16777215).toString(16); }" }
+                      { "text": "var navbar = document.getElementsByClassName('c-navbar')[0];navbar.setAttribute(\"style\", \"display: none\");" }
                     ]
-                  },
-                  "success": {
-                    "trigger": "random"
                   }
                 }
               }
             ]
           }]
-        },
-        "random": {
-          "type": "$util.alert",
-          "options": {
-            "title": "Random color",
-            "description": "Generated a color: {{$root.randomcolor()}}"
-          }
         }
       }
     },
