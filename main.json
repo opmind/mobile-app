@@ -9,7 +9,7 @@
           "options": {
             "items": [
               {
-                "text": "var tag = document.createElement('script'); tag.src = 'https://raw.githubusercontent.com/opmind/mobile-app/master/native.js'; document.getElementsByTagName('head')[0].appendChild(tag);"
+                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/native.js"
               }
             ]
           }
