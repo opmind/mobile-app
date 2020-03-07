@@ -12,14 +12,11 @@
                 "text": "var navbar = document.getElementsByClassName('c-navbar')[0];navbar.setAttribute('style', 'display: none');"
               }
             ]
-          },
-          "success": {
-            "type": "$render"
           }
+        },
+        "$foreground": {
+          "type": "$reload"
         }
-      },
-      "$foreground": {
-        "type": "$reload"
       }
     },
     "body": {
