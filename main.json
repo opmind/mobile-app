@@ -8,7 +8,7 @@
           "options": {
             "items": [
               {
-                "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/native.js"
+                "url": "https://opmind.github.io/mobile-app/native.js"
               }
             ]
           }
@@ -21,7 +21,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/index.html",
+        "url": "https://opmind.github.io/mobile-app/",
         "action": {
           "trigger": "navigate"
         }
