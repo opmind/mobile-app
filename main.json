@@ -27,11 +27,22 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "https://opmind.github.io/mobile-app/",
-            "action": {
-              "trigger": "navigate"
+            "url": "https://opmind.github.io/mobile-app/"
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "[BEFORE DECODING] {{$get.caption}}"
+                },
+                {
+                  "type": "label",
+                  "text": "[AFTER DECODING] {{he.decode($get.caption)}}"
+                }
+              ]
             }
-          }
+          ]
         }
       }
     }
