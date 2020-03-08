@@ -22,7 +22,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+        "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/index.html",
         "action": {
           "trigger": "navigate"
         }
