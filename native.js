@@ -15,7 +15,7 @@ var sheet = (function() {
 	return style.sheet;
 })();
 
-sheet.insertRule("body { background: red!important; }", 1);
+sheet.insertRule("body { background: red!important; }", 0);
 
 // window.onload = function(){
     // var style = document.createElement('style');
