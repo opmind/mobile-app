@@ -25,10 +25,6 @@
       },
       "templates": {
         "body": {
-          "background": {
-            "type": "html",
-            "url": "https://opmind.github.io/mobile-app/"
-          },
           "sections": [
             {
               "items": [
