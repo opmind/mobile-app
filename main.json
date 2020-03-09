@@ -19,11 +19,8 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "https://opmind.github.io/mobile-app/index.html",
-            "action": {
-              "trigger": "navigate"
-            }
-          },
+            "url": "https://opmind.github.io/mobile-app/index.html"
+          }
         }
       }
     }
