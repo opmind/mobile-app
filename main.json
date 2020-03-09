@@ -4,42 +4,26 @@
       "title": "Inspark IoT",
       "actions": {
         "$load": {
-          "type": "$script.include",
+          "type": "$agent.inject",
           "options": {
+            "id": "$webcontainer",
             "items": [
               {
-                "url": "https://opmind.github.io/mobile-app/native.js",
-                "url": "https://rawgit.com/mathiasbynens/he/master/he.js"
+                "url": "https://opmind.github.io/mobile-app/native.js"
               }
             ]
-          },
-          "success": {
-            "type": "$set",
-            "options": {
-              "caption": "prisoner&#39;s dilemma"
-            },
-            "success": {
-              "type": "$render"
-            }
           }
         }
       },
       "templates": {
         "body": {
-          "sections": [
-            {
-              "items": [
-                {
-                  "type": "label",
-                  "text": "[BEFORE DECODING] {{$get.caption}}"
-                },
-                {
-                  "type": "label",
-                  "text": "[AFTER DECODING] {{he.decode($get.caption)}}"
-                }
-              ]
+          "background": {
+            "type": "html",
+            "url": "https://opmind.github.io/mobile-app/index.html",
+            "action": {
+              "trigger": "navigate"
             }
-          ]
+          },
         }
       }
     }
