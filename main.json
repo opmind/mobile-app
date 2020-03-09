@@ -13,13 +13,19 @@
               }
             ]
           }
+        },
+        "$foreground": {
+          "type": "$reload"
         }
       }
     },
     "body": {
       "background": {
         "type": "html",
-        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard"
+        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+        "action": {
+          "trigger": "navigate"
+        }
       }
     }
   }
