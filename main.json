@@ -16,7 +16,19 @@
         },
         "$foreground": {
           "type": "$reload"
-        }
+        },
+        "handleLink": [{
+          "{{#if $jason.url.indexOf('dashboard/20') !== -1 }}": {
+            "type": "$href",
+            "options": {
+              "url": "https://semnext.inspark.ru/semux/#!/main/dashboard"
+            }
+          }
+        }, {
+          "{{#else}}": {
+            "type": "$default"
+          }
+        }]
       }
     },
     "body": {
@@ -24,7 +36,7 @@
         "type": "html",
         "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
         "action": {
-          "trigger": "navigate"
+          "trigger": "handleLink"
         }
       },
       "header": {
