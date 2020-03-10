@@ -27,4 +27,7 @@ sheet.insertRule(".c-navbar { display: none!important; } .c-main-content { paddi
     // `;
     // document.head.appendChild(style);
 // };
-favoriteLinksDialog.showDialog();
+
+// document.addEventListener("DOMContentLoaded", () => {
+    // alert("DOM готов!");
+//   });
