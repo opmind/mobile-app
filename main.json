@@ -22,7 +22,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard/325",
         "action": {
           "trigger": "navigate"
         }
