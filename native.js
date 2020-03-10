@@ -16,8 +16,9 @@ var sheet = (function() {
 	return style.sheet;
 })();
 
-sheet.insertRule(".c-navbar { display: none!important; } .c-main-content { padding-top: 0; } app-dashboard-controls { display: none; }", 0);
+sheet.insertRule(".c-navbar { display: none!important; }", 0);
 
+//.c-main-content { padding-top: 0; } app-dashboard-controls { display: none; }
 // window.onload = function(){
     // var style = document.createElement('style');
     // style.innerHTML = `
