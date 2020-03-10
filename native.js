@@ -1,23 +1,26 @@
+document.addEventListener("DOMContentLoaded", () => {
+	var sheet = (function() {
+		// Create the <style> tag
+		var style = document.createElement("style");
+	
+		// Add a media (and/or media query) here if you'd like!
+		// style.setAttribute("media", "screen")
+		// style.setAttribute("media", "only screen and (max-width : 1024px)")
+	
+		// WebKit hack :(
+		style.appendChild(document.createTextNode(""));
+	
+		// Add the <style> element to the page
+		document.head.appendChild(style);
+	
+		return style.sheet;
+	})();
+	
+	sheet.insertRule(".c-navbar { visibility: hidden!important; }", 0);
+	sheet.insertRule(".c-main-content { padding-top: 0; }", 0);
+});
 
-var sheet = (function() {
-	// Create the <style> tag
-	var style = document.createElement("style");
 
-	// Add a media (and/or media query) here if you'd like!
-	// style.setAttribute("media", "screen")
-	// style.setAttribute("media", "only screen and (max-width : 1024px)")
-
-	// WebKit hack :(
-	style.appendChild(document.createTextNode(""));
-
-	// Add the <style> element to the page
-	document.head.appendChild(style);
-
-	return style.sheet;
-})();
-
-sheet.insertRule(".c-navbar { visibility: hidden!important; }", 0);
-sheet.insertRule(".c-main-content { padding-top: 0; }", 0);
 // sheet.insertRule("app-dashboard-controls { display: none; }", 0);
 
 // window.onload = function(){
@@ -30,6 +33,3 @@ sheet.insertRule(".c-main-content { padding-top: 0; }", 0);
     // document.head.appendChild(style);
 // };
 
-// document.addEventListener("DOMContentLoaded", () => {
-    // alert("DOM готов!");
-//   });

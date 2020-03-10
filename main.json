@@ -22,9 +22,19 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard/",
+        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
         "action": {
           "trigger": "navigate"
+        }
+      },
+      "header": {
+        "title": {
+          "type": "image",
+          "style": {
+            "width": "35",
+            "height": "35"
+          },
+          "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
         }
       }
     }
