@@ -2,6 +2,9 @@
   "$jason": {
     "head": {
       "title": "Inspark IoT",
+      "description": "Inspark IoT platform",
+      "icon": "https://opmind.github.io/mobile-app/ic_launcher.png",
+      "offline": "true",
       "actions": {
         "$load": {
           "type": "$agent.inject",
@@ -16,6 +19,12 @@
         },
         "$foreground": {
           "type": "$reload"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
         }
       }
     },
@@ -26,7 +35,37 @@
         "action": {
           "trigger": "navigate"
         }
-      }
+      },
+      "header": {
+        "title": {
+          "type": "image",
+          "style": {
+            "width": "35",
+            "height": "35"
+          },
+          "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
+        }
+      },
+      "layers": [
+        {
+          "type": "label",
+          "text": "👈",
+          "style": {
+            "bottom": "20",
+            "right": "20",
+            "background": "#ff0000",
+            "color": "#ffffff",
+            "width": "100",
+            "height": "100",
+            "align": "center",
+            "size": "30",
+            "corner_radius": "50"
+          },
+          "action": {
+            "type": "$back"
+          }
+        }
+      ]
     }
   }
 }
