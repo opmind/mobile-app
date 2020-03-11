@@ -5,14 +5,17 @@
       "description": "Inspark IoT platform app",
       "actions": {
         "$load": {
-          "type": "$agent.inject",
-          "options": {
-            "id": "$webcontainer",
-            "items": [
-              {
-                "url": "https://opmind.github.io/mobile-app/native.js"
-              }
-            ]
+          "type": "$render",
+          "success": {
+            "type": "$agent.inject",
+            "options": {
+              "id": "$webcontainer",
+              "items": [
+                {
+                  "url": "https://opmind.github.io/mobile-app/native.js"
+                }
+              ]
+            }
           }
         },
         "visit": [
