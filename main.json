@@ -21,14 +21,9 @@
           "type": "$reload"
         },
         "webviewnav": {
-          "type": "$agent.href",
+          "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
           "options": {
-            "id": "$webcontainer",
-            "items": [
-              {
-                "url": "https://semnext.inspark.ru/semux/#!/main/dashboard"
-              }
-            ]
+            "id": "$webcontainer"
           }
         }
       }
