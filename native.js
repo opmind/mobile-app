@@ -22,4 +22,4 @@ sheet.insertRule(".dashboard-heading { display: none!important }", 0);
 sheet.insertRule(".search-container { display: none; }", 0);
 sheet.insertRule(".sticky-container > div { top: 0!important; }", 0);
 sheet.insertRule(".c-dashboard-toolbar__side-left .ui-button { display: none; }", 0);
-sheet.insertRule("app-dashboard-main app-dashboard-controls { display: none; }", 0);
+sheet.insertRule("app-dashboard-main app-dashboard-controls { display: none; }", 0); //
