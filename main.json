@@ -38,6 +38,20 @@
             "height": "35"
           },
           "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
+        },
+        "menu": {
+          "image": "Список",
+          "style": {
+            "color": "#0000ff",
+            "font": "HelveticaNeue-Bold",
+            "size": "17"
+          },
+          "href": {
+            "url": "https://opmind.github.io/mobile-app/main.json",
+            "view": "jason",
+            "transition": "push",
+            "preload": {}
+          }
         }
       }
     }
