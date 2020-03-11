@@ -91,7 +91,10 @@
                   "style": {
                     "height": "21"
                   },
-                  "url": "https://opmind.github.io/mobile-app/main.json"
+                  "url": "https://opmind.github.io/mobile-app/main.json",
+                  "action": {
+                    "type": "$reload"
+                  }
                 },
                 {
                   "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
