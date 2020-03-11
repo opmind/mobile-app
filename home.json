@@ -11,6 +11,10 @@
           },
           "success": {
             "type": "$render",
+            "href": {
+              "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+              "view": "web"
+            },
             "success": {
               "type": "$agent.inject",
               "options": {
@@ -22,14 +26,6 @@
                 ]
               }
             }
-          }
-        },
-        "$show": {
-          "type": "$href",
-          "options": {
-            "url": "https://opmind.github.io/mobile-app/main.json",
-            "transition": "push",
-            "view": "jason"
           }
         },
         "visit": [
@@ -72,7 +68,7 @@
           },
           "background": {
             "type": "html",
-            "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+            "url": "{{'url' in $params ? $params.url : 'https://semnext.inspark.ru/semux/#!/main/'}}",
             "action": {
               "trigger": "visit"
             }
@@ -91,7 +87,14 @@
                   "style": {
                     "height": "21"
                   },
-                  "url": "https://opmind.github.io/mobile-app/main.json"
+                  "url": "https://opmind.github.io/mobile-app/main.json",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+                      "view": "jason"
+                    }
+                  }
                 },
                 {
                   "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
