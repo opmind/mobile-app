@@ -11,6 +11,10 @@
           },
           "success": {
             "type": "$render",
+            "href": {
+              "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+              "view": "web"
+            },
             "success": {
               "type": "$agent.inject",
               "options": {
