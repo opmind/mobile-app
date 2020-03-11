@@ -57,10 +57,8 @@
             "font": "HelveticaNeue-Bold",
             "size": "17"
           },
-          "href": {
-            "url": "https://opmind.github.io/mobile-app/main.json",
-            "view": "jason",
-            "transition": "push"
+          "action": {
+            "trigger": "webviewnav"
           }
         }
       }
