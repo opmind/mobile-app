@@ -96,7 +96,7 @@
                     "type": "$href",
                     "options": {
                         "url": "https://opmind.github.io/mobile-app/main.json",
-                        "transition": "push",
+                        "transition": "fullscreen",
                         "view": "jason"
                       }
                   }
