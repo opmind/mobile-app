@@ -1,0 +1,62 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Inspark IoT",
+      "description": "Inspark IoT platform",
+      "icon": "https://opmind.github.io/mobile-app/ic_launcher.png",
+      "offline": "true",
+      "actions": {
+        "$load": {
+          "type": "$agent.inject",
+          "options": {
+            "id": "$webcontainer",
+            "items": [
+              {
+                "url": "https://opmind.github.io/mobile-app/native.js"
+              }
+            ]
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "webviewnav": {
+          "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+          "options": {
+            "id": "$webcontainer"
+          }
+        }
+      }
+    },
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+        "action": {
+          "trigger": "navigate"
+        }
+      },
+      "header": {
+        "title": {
+          "type": "image",
+          "style": {
+            "width": "35",
+            "height": "35"
+          },
+          "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
+        },
+        "menu": {
+          "text": "Список",
+          "style": {
+            "color": "#0000ff",
+            "font": "HelveticaNeue-Bold",
+            "size": "17"
+          },
+          "action": {
+            "trigger": "webviewnav"
+          }
+        }
+      }
+    }
+  }
+}

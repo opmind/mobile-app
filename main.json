@@ -1,62 +1,107 @@
 {
-  "$jason": {
-    "head": {
-      "title": "Inspark IoT",
-      "description": "Inspark IoT platform",
-      "icon": "https://opmind.github.io/mobile-app/ic_launcher.png",
-      "offline": "true",
-      "actions": {
-        "$load": {
-          "type": "$agent.inject",
-          "options": {
-            "id": "$webcontainer",
+    "$jason": {
+      "head": {
+        "title": "{ ˃̵̑ᴥ˂̵̑}",
+        "actions": {
+          "$foreground": {
+            "type": "$reload"
+          }
+        }
+      },
+      "body": {
+        "style": {
+          "background": "#ffffff",
+          "border": "none"
+        },
+        "sections": [
+          {
             "items": [
               {
-                "url": "https://opmind.github.io/mobile-app/native.js"
+                "type": "vertical",
+                "style": {
+                  "padding": "30",
+                  "spacing": "20",
+                  "align": "center"
+                },
+                "components": [
+                  {
+                    "type": "label",
+                    "text": "It's ALIVE!",
+                    "style": {
+                      "align": "center",
+                      "font": "Courier-Bold",
+                      "size": "18"
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "text": "This is a demo app. You can make your own app by changing the url inside settings.plist",
+                    "style": {
+                      "align": "center",
+                      "font": "Courier",
+                      "padding": "30",
+                      "size": "14"
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "text": "{ ˃̵̑ᴥ˂̵̑}",
+                    "style": {
+                      "align": "center",
+                      "font": "HelveticaNeue-Bold",
+                      "size": "50"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "label",
+                "style": {
+                  "align": "right",
+                  "padding": "10",
+                  "color": "#000000",
+                  "font": "HelveticaNeue",
+                  "size": "12"
+                },
+                "text": "Check out Live DEMO",
+                "href": {
+                  "url": "https://jasonette.github.io/Jasonpedia/demo.json",
+                  "fresh": "true"
+                }
+              },
+              {
+                "type": "label",
+                "style": {
+                  "align": "right",
+                  "padding": "10",
+                  "color": "#000000",
+                  "font": "HelveticaNeue",
+                  "size": "12"
+                },
+                "text": "Watch the tutorial video",
+                "href": {
+                  "url": "https://www.youtube.com/watch?v=hfevBAAfCMQ",
+                  "view": "Web"
+                }
+              },
+              {
+                "type": "label",
+                "style": {
+                  "align": "right",
+                  "padding": "10",
+                  "color": "#000000",
+                  "font": "HelveticaNeue",
+                  "size": "12"
+                },
+                "text": "View documentation",
+                "href": {
+                  "url": "https://jasonette.github.io/documentation",
+                  "view": "Web"
+                }
               }
             ]
           }
-        },
-        "$foreground": {
-          "type": "$reload"
-        },
-        "webviewnav": {
-          "url": "https://opmind.github.io/mobile-app/main.json",
-          "options": {
-            "id": "$webcontainer"
-          }
-        }
-      }
-    },
-    "body": {
-      "background": {
-        "type": "html",
-        "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
-        "action": {
-          "trigger": "navigate"
-        }
-      },
-      "header": {
-        "title": {
-          "type": "image",
-          "style": {
-            "width": "35",
-            "height": "35"
-          },
-          "url": "https://raw.githubusercontent.com/opmind/mobile-app/master/ic_launcher.png"
-        },
-        "menu": {
-          "text": "Список",
-          "style": {
-            "color": "#0000ff",
-            "font": "HelveticaNeue-Bold",
-            "size": "17"
-          },
-          "action": {
-            "trigger": "webviewnav"
-          }
-        }
+        ]
       }
     }
   }
-}
