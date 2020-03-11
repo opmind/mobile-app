@@ -19,6 +19,17 @@
         },
         "$foreground": {
           "type": "$reload"
+        },
+        "webviewnav": {
+          "type": "$agent.href",
+          "options": {
+            "id": "$webcontainer",
+            "items": [
+              {
+                "url": "https://semnext.inspark.ru/semux/#!/main/dashboard"
+              }
+            ]
+          }
         }
       }
     },
