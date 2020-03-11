@@ -24,9 +24,6 @@
             }
           }
         },
-        "$pull": {
-          "type": "$reload"
-        },
         "visit": [
           {
             "{{#if /\\/(dashboard|eventslog|charts|map)$/.test($jason.url) }}": {
