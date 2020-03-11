@@ -22,6 +22,20 @@
                 ]
               }
             }
+          },
+          "error": {
+            "type": "$render",
+            "success": {
+              "type": "$agent.inject",
+              "options": {
+                "id": "$webcontainer",
+                "items": [
+                  {
+                    "url": "https://opmind.github.io/mobile-app/native.js"
+                  }
+                ]
+              }
+            }
           }
         },
         "visit": [
