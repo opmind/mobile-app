@@ -18,10 +18,11 @@ var sheet = (function() {
 sheet.insertRule(".c-navbar { display: none!important; }", 0);
 sheet.insertRule(".c-main-content { padding-top: 0; }", 0);
 sheet.insertRule("dashboard-panels { display: none }", 0);
-sheet.insertRule(".dashboard-heading { display: none }", 0);
+sheet.insertRule(".dashboard-heading { display: none!important }", 0);
 sheet.insertRule(".search-container { display: none; }", 0);
 sheet.insertRule(".sticky-container > div { top: 0!important; }", 0);
 sheet.insertRule(".c-dashboard-toolbar__side-left .ui-button { display: none; }", 0);
+sheet.insertRule("app-dashboard-main app-dashboard-controls { display: none; }", 0);
 // document.addEventListener("DOMContentLoaded", () => {
 //
 // });
