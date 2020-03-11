@@ -1,107 +1,48 @@
 {
-    "$jason": {
-      "head": {
-        "title": "{ ˃̵̑ᴥ˂̵̑}",
-        "actions": {
-          "$foreground": {
-            "type": "$reload"
-          }
-        }
-      },
-      "body": {
-        "style": {
-          "background": "#ffffff",
-          "border": "none"
+  "$jason": {
+    "head": {
+      "title": "Selective URL handling",
+      "description": "By attaching an action called 'visit' and observing the $jason.url value, we can selectively trigger different actions depending on the clicked URL. In this case the browser demonstrates a regular behavior when you click the top menu items, but does a native $href transition if you click any other link",
+      "actions": {
+        "$load": {
+          "type": "$render"
         },
-        "sections": [
+        "visit": [
           {
-            "items": [
-              {
-                "type": "vertical",
-                "style": {
-                  "padding": "30",
-                  "spacing": "20",
-                  "align": "center"
+            "{{#if /\\/(newest|newcomments|show|ask|jobs|submit)$/.test($jason.url) }}": {
+              "type": "$default"
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$href",
+              "options": {
+                "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/hijack.json",
+                "preload": {
+                  "background": "#ffffff"
                 },
-                "components": [
-                  {
-                    "type": "label",
-                    "text": "It's ALIVE!",
-                    "style": {
-                      "align": "center",
-                      "font": "Courier-Bold",
-                      "size": "18"
-                    }
-                  },
-                  {
-                    "type": "label",
-                    "text": "This is a demo app. You can make your own app by changing the url inside settings.plist",
-                    "style": {
-                      "align": "center",
-                      "font": "Courier",
-                      "padding": "30",
-                      "size": "14"
-                    }
-                  },
-                  {
-                    "type": "label",
-                    "text": "{ ˃̵̑ᴥ˂̵̑}",
-                    "style": {
-                      "align": "center",
-                      "font": "HelveticaNeue-Bold",
-                      "size": "50"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "label",
-                "style": {
-                  "align": "right",
-                  "padding": "10",
-                  "color": "#000000",
-                  "font": "HelveticaNeue",
-                  "size": "12"
-                },
-                "text": "Check out Live DEMO",
-                "href": {
-                  "url": "https://jasonette.github.io/Jasonpedia/demo.json",
-                  "fresh": "true"
-                }
-              },
-              {
-                "type": "label",
-                "style": {
-                  "align": "right",
-                  "padding": "10",
-                  "color": "#000000",
-                  "font": "HelveticaNeue",
-                  "size": "12"
-                },
-                "text": "Watch the tutorial video",
-                "href": {
-                  "url": "https://www.youtube.com/watch?v=hfevBAAfCMQ",
-                  "view": "Web"
-                }
-              },
-              {
-                "type": "label",
-                "style": {
-                  "align": "right",
-                  "padding": "10",
-                  "color": "#000000",
-                  "font": "HelveticaNeue",
-                  "size": "12"
-                },
-                "text": "View documentation",
-                "href": {
-                  "url": "https://jasonette.github.io/documentation",
-                  "view": "Web"
+                "options": {
+                  "url": "{{$jason.url}}"
                 }
               }
-            ]
+            }
           }
         ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Custom Browser"
+          },
+          "background": {
+            "type": "html",
+            "url": "{{'url' in $params ? $params.url : 'https://news.ycombinator.com'}}",
+            "action": {
+              "trigger": "visit"
+            }
+          }
+        }
       }
     }
   }
+}
