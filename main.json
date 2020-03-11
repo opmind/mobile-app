@@ -78,10 +78,7 @@
           },
           "background": {
             "type": "html",
-            "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
-            "action": {
-              "trigger": "visit"
-            }
+            "url": "https://semnext.inspark.ru/semux/#!/main/dashboard"
           },
           "footer": {
             "tabs": {
