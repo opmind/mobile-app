@@ -18,7 +18,8 @@
                 },
                 "options": {
                   "url": "{{$jason.url}}"
-                }
+                },
+                "transition": "modal"
               }
             }
           },
@@ -30,6 +31,7 @@
                 "preload": {
                   "background": "#ffffff"
                 },
+                "transition": "modal",
                 "options": {
                   "url": "{{$jason.url}}"
                 }
