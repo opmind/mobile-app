@@ -9,7 +9,7 @@
         },
         "visit": [
           {
-            "{{#if /\\/(dashboard|newcomments|show|ask|jobs|submit)$/.test($jason.url) }}": {
+            "{{#if /\\/(dashboard|eventslog|charts|map)$/.test($jason.url) }}": {
               "type": "$href",
               "options": {
                 "url": "https://opmind.github.io/mobile-app/main.json",
