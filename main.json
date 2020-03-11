@@ -24,14 +24,6 @@
             }
           }
         },
-        "$show": {
-          "type": "$href",
-          "options": {
-            "url": "https://opmind.github.io/mobile-app/main.json",
-            "transition": "push",
-            "view": "jason"
-          }
-        },
         "visit": [
           {
             "{{#if /\\/(dashboard|eventslog|charts|map)$/.test($jason.url) }}": {
@@ -96,7 +88,7 @@
                     "type": "$href",
                     "options": {
                         "url": "https://opmind.github.io/mobile-app/main.json",
-                        "transition": "fullscreen",
+                        "transition": "modal",
                         "view": "jason"
                       }
                   }
