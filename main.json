@@ -15,9 +15,6 @@
             ]
           }
         },
-        "$load": {
-          "type": "$render"
-        },
         "visit": [
           {
             "{{#if /\\/(dashboard|eventslog|charts|map)$/.test($jason.url) }}": {
