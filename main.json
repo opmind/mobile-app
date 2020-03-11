@@ -87,7 +87,14 @@
                   "style": {
                     "height": "21"
                   },
-                  "url": "https://opmind.github.io/mobile-app/main.json"
+                  "url": "https://opmind.github.io/mobile-app/main.json",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
+                      "view": "web"
+                    }
+                  }
                 },
                 {
                   "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
