@@ -93,7 +93,12 @@
                   },
                   "url": "https://opmind.github.io/mobile-app/main.json",
                   "action": {
-                    "type": "$reload"
+                    "type": "$href",
+                    "options": {
+                        "url": "https://opmind.github.io/mobile-app/main.json",
+                        "transition": "push",
+                        "view": "jason"
+                      }
                   }
                 },
                 {
