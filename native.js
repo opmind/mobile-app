@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		return style.sheet;
 	})();
 	
-	sheet.insertRule(".c-navbar { visibility: hidden!important; }", 0);
-	sheet.insertRule(".c-main-content { padding-top: 0; }", 0);
-	sheet.insertRule(".sticky-container { display: none; }", 0);
+	sheet.insertRule(".c-navbar { display: none!important; }", 0);
+	sheet.insertRule(".c-main-content { padding-top: 0; }", 1);
+	sheet.insertRule(".sticky-container { display: none; }", 2);
 });
 
 
