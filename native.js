@@ -23,20 +23,3 @@ sheet.insertRule(".search-container { display: none; }", 0);
 sheet.insertRule(".sticky-container > div { top: 0!important; }", 0);
 sheet.insertRule(".c-dashboard-toolbar__side-left .ui-button { display: none; }", 0);
 sheet.insertRule("app-dashboard-main app-dashboard-controls { display: none; }", 0);
-// document.addEventListener("DOMContentLoaded", () => {
-//
-// });
-
-
-// sheet.insertRule("app-dashboard-controls { display: none; }", 0);
-
-// window.onload = function(){
-    // var style = document.createElement('style');
-    // style.innerHTML = `
-    // .c-navbar {
-    // display: none;
-    // }
-    // `;
-    // document.head.appendChild(style);
-// };
-
