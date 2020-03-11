@@ -49,8 +49,7 @@
           "href": {
             "url": "https://opmind.github.io/mobile-app/main.json",
             "view": "jason",
-            "transition": "push",
-            "preload": {}
+            "transition": "push"
           }
         }
       }
