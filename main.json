@@ -68,6 +68,41 @@
             "action": {
               "trigger": "visit"
             }
+          },
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "rgba(255,255,255,0.8)",
+                "color:disabled": "#cecece",
+                "color": "#009efa"
+              },
+              "items": [
+                {
+                  "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+                  "text": "Home",
+                  "style": {
+                    "height": "21"
+                  },
+                  "url": "https://opmind.github.io/mobile-app/main.json"
+                },
+                {
+                  "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
+                  "text": "jasonpedia",
+                  "style": {
+                    "height": "21"
+                  },
+                  "url": "https://opmind.github.io/mobile-app/jasonpedia.json"
+                },
+                {
+                  "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/messages.png",
+                  "text": "Messages",
+                  "style": {
+                    "height": "21"
+                  },
+                  "url": "https://opmind.github.io/mobile-app/messages.json"
+                }
+              ]
+            }
           }
         }
       }
