@@ -16,13 +16,6 @@
         },
         "$foreground": {
           "type": "$reload"
-        },
-        "displayBanner": {
-          "type": "$util.banner",
-          "options": {
-            "title": "Clicked",
-            "description": "Link {{$jason.url}} clicked!"
-          }
         }
       }
     },
@@ -31,7 +24,7 @@
         "type": "html",
         "url": "https://semnext.inspark.ru/semux/#!/main/dashboard",
         "action": {
-          "trigger": "displayBanner"
+          "trigger": "navigate"
         }
       },
       "header": {
