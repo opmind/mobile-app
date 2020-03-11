@@ -47,7 +47,7 @@
           },
           "background": {
             "type": "html",
-            "url": "{{'url' in $params ? $params.url : 'https://semnext.inspark.ru/semux/#!/main/dashboard'}}",
+            "url": "{{'url' in $params ? $params.url : 'https://semnext.inspark.ru/semux/#!/main/'}}",
             "action": {
               "trigger": "visit"
             }
